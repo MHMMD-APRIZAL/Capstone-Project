@@ -1,75 +1,131 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SteamPro - Booking Cuci Steam Mobil Terbaik</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard PRISMO</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <header>
+    <div class="logo">PRISMO</div>
+    <div class="user-info">
+      <div class="notification">
+        <i class="fas fa-bell"></i>
+        <span class="badge">3</span>
+      </div>
+      <div class="avatar">
+        <img src="https://i.pravatar.cc/40" alt="User Avatar" />
+      </div>
+      <span class="user-name">Super Admin</span>
+      <button class="logout-btn" title="Logout">
+        <i class="fas fa-sign-out-alt"></i>
+      </button>
+    </div>
+  </header>
+  <nav class="menu-bar">
+    <ul>
+      <li class="active"><i class="fas fa-th-large"></i> Dashboard</li>
+      <li><i class="fas fa-store"></i> Kelola Mitra</li>
+      <li><i class="fas fa-user-friends"></i> Kelola Customer</li>
+      <li><i class="fas fa-file-alt"></i> Kelola Konten</li>
+      <li><i class="fas fa-calendar-alt"></i> Kelola Booking</li>
+      <li><i class="fas fa-chart-line"></i> Laporan</li>
+    </ul>
+  </nav>
 
-    <header class="navbar">
-        <div class="logo">Steam**Pro**</div>
-        <nav>
-            <a href="#home" class="active">Beranda</a>
-            <a href="#fitur">Fitur</a>
-            <a href="#mitra">Cari Steam</a>
-            <button id="loginBtn" class="btn btn-login">Login / Daftar</button>
-        </nav>
-    </header>
+  <main>
+    <section class="summary-cards">
+      <div class="card light-blue">
+        <div class="icon-bg"><i class="fas fa-store"></i></div>
+        <div class="info">
+          <div class="title">Total Mitra</div>
+          <div class="number">100</div>
+        </div>
+      </div>
 
-    <section id="home" class="hero-section">
-        <div class="hero-content">
-            <h1>Mobil Kinclong, Booking Cepat, Hidup Santai.</h1>
-            <p>Pesan layanan cuci steam mobil terbaik di dekat Anda, kapan saja, tanpa antri panjang.</p>
-            <a href="#mitra" class="btn btn-primary">Booking Sekarang!</a>
+      <div class="card light-green">
+        <div class="icon-bg"><i class="fas fa-user"></i></div>
+        <div class="info">
+          <div class="title">Total Customers</div>
+          <div class="number">500</div>
         </div>
-        <div class="hero-image">
-            <div class="ornament-line"></div>
-            <i class="fas fa-car-wash car-icon"></i>
+      </div>
+
+      <div class="card light-yellow">
+        <div class="icon-bg"><i class="fas fa-exchange-alt"></i></div>
+        <div class="info">
+          <div class="title">Total Transaksi</div>
+          <div class="number">350</div>
         </div>
+      </div>
+
+      <div class="card light-purple">
+        <div class="icon-bg"><i class="fas fa-wallet"></i></div>
+        <div class="info">
+          <div class="title">Total Pendapatan</div>
+          <div class="number">Rp 125.000.000</div>
+        </div>
+      </div>
     </section>
 
-    <section id="fitur" class="features-section">
-        <h2>Kenapa Memilih SteamPro?</h2>
-        <div class="features-grid">
-            
-            <div class="feature-card">
-                <i class="fas fa-calendar-check icon-blue"></i>
-                <h3>Booking Fleksibel</h3>
-                <p>Pilih tanggal, jam, dan bahkan pegawai favorit Anda dengan mudah.</p>
-            </div>
-            
-            <div class="feature-card">
-                <i class="fas fa-map-marked-alt icon-blue"></i>
-                <h3>Steam Terdekat</h3>
-                <p>Temukan ratusan mitra cuci steam terpercaya di berbagai lokasi.</p>
-            </div>
-
-            <div class="feature-card">
-                <i class="fas fa-hands-helping icon-blue"></i>
-                <h3>Layanan Lengkap</h3>
-                <p>Dari cuci motor, cuci mobil, hingga salon mobil profesional tersedia.</p>
-            </div>
-
-            <div class="feature-card">
-                <i class="fas fa-star icon-blue"></i>
-                <h3>Ulasan Nyata</h3>
-                <p>Lihat rating dan ulasan dari customer lain sebelum Anda booking.</p>
-            </div>
+    <section class="actions">
+      <div class="action-card blue">
+        <div>
+          <div class="action-title">Permintaan Penarikan Saldo</div>
+          <div class="action-number">10</div>
+          <div class="action-subtitle">Menunggu Persetujuan</div>
         </div>
+        <button class="btn btn-blue">Lihat Detail</button>
+      </div>
+
+      <div class="action-card orange">
+        <div>
+          <div class="action-title">Booking Aktif</div>
+          <div class="action-number">150</div>
+          <div class="action-subtitle">Sedang Berlangsung</div>
+        </div>
+        <button class="btn btn-orange">Lihat Detail</button>
+      </div>
     </section>
 
-    <footer class="footer">
-        <p>&copy; 2025 SteamPro. Hak Cipta Dilindungi.</p>
-        <div class="footer-links">
-            <a href="#">Kebijakan Privasi</a> | 
-            <a href="#">Syarat & Ketentuan</a>
-        </div>
-    </footer>
+    <section class="latest-activities">
+      <h3>Aktivitas Terbaru</h3>
 
-    <script src="script.js"></script>
+      <div class="activity">
+        <div class="activity-icon blue-bg">
+          <i class="fas fa-user-plus"></i>
+        </div>
+        <div class="activity-content">
+          <div class="activity-title">Mitra baru mendaftar</div>
+          <div class="activity-subtitle">Quick Clean Auto - Jakarta Pusat</div>
+          <div class="activity-time">15 menit yang lalu</div>
+        </div>
+      </div>
+
+      <div class="activity">
+        <div class="activity-icon green-bg">
+          <i class="fas fa-user-friends"></i>
+        </div>
+        <div class="activity-content">
+          <div class="activity-title">Customer baru mendaftar</div>
+          <div class="activity-subtitle">Bowo is real</div>
+          <div class="activity-time">1 jam yang lalu</div>
+        </div>
+      </div>
+
+      <div class="activity">
+        <div class="activity-icon red-bg">
+          <i class="fas fa-calendar-check"></i>
+        </div>
+        <div class="activity-content">
+          <div class="activity-title">Booking Baru</div>
+          <div class="activity-subtitle">Ahmad Rizki - Steam Wash Premium</div>
+          <div class="activity-time">2 jam yang lalu</div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
